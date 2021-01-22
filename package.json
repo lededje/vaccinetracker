@@ -1,0 +1,16 @@
+{
+  "name": "tommo-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "^10.0.5",
+    "nextjs": "^0.0.3",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
