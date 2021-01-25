@@ -34,12 +34,11 @@ const Index = () => {
         )}
 
         <div className="map-container">
-          <div className="percentage">{currentCumulativeFirstDose && `${(currentCumulativeFirstDose / ukPopulationCount * 100).toFixed(2)}%`}</div>
           <UkMap percentage={currentCumulativeFirstDose / ukPopulationCount} />
+          <div className="percentage">{currentCumulativeFirstDose && `${(currentCumulativeFirstDose / ukPopulationCount * 100).toFixed(2)}%`}</div>
         </div>
 
         <a className="source" href="https://coronavirus.data.gov.uk/details/vaccinations">Coronavirus: Public Health England</a>
-        {` | `}
         <a className="source" href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/timeseries/ukpop/pop">UK Population: Office for National Statistics</a>
       </div>
     </>

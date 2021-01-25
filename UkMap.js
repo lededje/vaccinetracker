@@ -2,7 +2,7 @@ import React from 'react';
 
 const UkMap = ({ percentage }) => {
   return (
-  <svg width="677" height="742.295" viewBox="-1 279.332 677 742.295">
+  <svg id="map" width="677" height="742.295" viewBox="-1 279.332 677 742.295">
     <defs>
       <linearGradient id="fill_grad" gradientTransform="rotate(90)">
           <stop offset={`${(1-percentage)*100}%`} stopColor="white" />

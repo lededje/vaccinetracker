@@ -1,37 +1,31 @@
 body {
   background: #edffff;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 html, body {
   height: 100%;
 }
 
-#__next {
-  height: 100%;
+#map {
   width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.container {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.map-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 24px;
+  height: auto;
 }
 
 .percentage {
-  font-size: 72px;
-  margin-right: 32px;
+  font-size: 56px;
+  text-align: center;
+  padding: 16px 0;
 }
 
 .title {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 16px;
@@ -45,5 +39,22 @@ html, body {
 }
 
 .source {
+  text-align: center;
   font-size: 13px;
+  display: block;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 900px) {
+  .map-container {
+    align-items: center;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .map-container {
+    max-width: 1200px;
+    align-self: center;
+  }
 }
